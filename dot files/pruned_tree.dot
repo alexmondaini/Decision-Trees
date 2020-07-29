@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ca <= 0.5\ngini = 0.498\nsamples = 222\nvalue = [118, 104]\nclass = NO HD", fillcolor="#fcf0e8"] ;
+1 [label="thal_7.0 <= 0.5\ngini = 0.382\nsamples = 132\nvalue = [98, 34]\nclass = NO HD", fillcolor="#eead7e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="oldpeak <= 2.7\ngini = 0.24\nsamples = 93\nvalue = [80, 13]\nclass = NO HD", fillcolor="#e99559"] ;
+1 -> 2 ;
+3 [label="gini = 0.185\nsamples = 87\nvalue = [78, 9]\nclass = NO HD", fillcolor="#e89050"] ;
+2 -> 3 ;
+4 [label="gini = 0.444\nsamples = 6\nvalue = [2, 4]\nclass = YES HD", fillcolor="#9ccef2"] ;
+2 -> 4 ;
+5 [label="cp_4.0 <= 0.5\ngini = 0.497\nsamples = 39\nvalue = [18, 21]\nclass = YES HD", fillcolor="#e3f1fb"] ;
+1 -> 5 ;
+6 [label="gini = 0.42\nsamples = 20\nvalue = [14, 6]\nclass = NO HD", fillcolor="#f0b78e"] ;
+5 -> 6 ;
+7 [label="gini = 0.332\nsamples = 19\nvalue = [4, 15]\nclass = YES HD", fillcolor="#6eb7ec"] ;
+5 -> 7 ;
+8 [label="cp_4.0 <= 0.5\ngini = 0.346\nsamples = 90\nvalue = [20, 70]\nclass = YES HD", fillcolor="#72b9ec"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="oldpeak <= 0.55\ngini = 0.499\nsamples = 31\nvalue = [16, 15]\nclass = NO HD", fillcolor="#fdf7f3"] ;
+8 -> 9 ;
+10 [label="gini = 0.401\nsamples = 18\nvalue = [13, 5]\nclass = NO HD", fillcolor="#efb185"] ;
+9 -> 10 ;
+11 [label="gini = 0.355\nsamples = 13\nvalue = [3, 10]\nclass = YES HD", fillcolor="#74baed"] ;
+9 -> 11 ;
+12 [label="gini = 0.126\nsamples = 59\nvalue = [4, 55]\nclass = YES HD", fillcolor="#47a4e7"] ;
+8 -> 12 ;
+}
